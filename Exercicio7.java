@@ -1,28 +1,28 @@
-/* Tendo como dados de entrada a altura de uma pessoa, construa um algoritmo 
-que calcule seu peso ideal, usando a seguinte fórmula: (72.7*altura) - 58 */
+//Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
 
 import java.util.Scanner;
+
 
 public class Exercicio7 
 {
     public static void main(String[] args)
     {
-        //Declação variaveis 
-        double altura;
-        double peso;
+        //Declaração variaveis
+        double lados;
+        double area;
 
         //Entrada de dados
         Scanner input = new Scanner(System.in);
-        System.out.println("Informe sua altura: ");
-        altura = input.nextDouble();
+        System.out.println("Informe quantos centímetros possui cada lado do quadrado: ");
+        lados = input.nextDouble();
         input.close();
 
         //Calculo
-        peso = (72.7 * altura) - 58;
-
+        area = Math.pow(lados, 2) * 2;
+        
         //Resultado
-        System.out.println("Seu peso ideal é: " + peso);
-
+        System.out.println("O dobro da área do quadrado é: " +area);
+       
     }
     
 }

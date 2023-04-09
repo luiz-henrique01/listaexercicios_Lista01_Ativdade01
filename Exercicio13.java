@@ -5,7 +5,7 @@ Para mulheres: (62.1*h) - 44.7*/
 
 import java.util.Scanner;
 
-public class Exercicio8 
+public class Exercicio13 
 {
     public static void main(String[] args)
     {
@@ -31,6 +31,7 @@ public class Exercicio8
         
         System.out.println("Informe sua altura: ");
         altura = input.nextDouble();
+        input.close();
 
         //Calculo 
         if (usuario == homem){

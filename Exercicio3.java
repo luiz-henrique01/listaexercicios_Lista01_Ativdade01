@@ -1,32 +1,31 @@
-//Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
+//Faça um Programa que peça dois números e imprima a soma.
 
 import java.util.Scanner;
-
 
 public class Exercicio3 
 {
     public static void main(String[] args)
     {
-      //Declaração variaveis 
-      double raio;
-      double area; 
+      //Declaracoes variaveis
+      double numero1;
+      double numero2;
+      double soma;
 
       //Entrada de dados
       Scanner input = new Scanner(System.in);
-      System.out.println("Informe o raio do círculo: ");
-      raio = input.nextDouble();
-      input.close(); 
+      System.out.println("Digite o primeiro número: ");
+      numero1 = input.nextDouble();
+      System.out.println("Digite o segundo número: ");
+      numero2 = input.nextDouble();
+      input.close();
 
       //Calculo
-      area = Math.pow(raio, 2) * 3.14; 
-        
-
+      soma = numero1 + numero2;
+  
       //Resultado
-      System.out.println("A área do círculo é: " +area);  
-
+      System.out.println("A soma dos dois números é: " +soma);   
 
     }
 
-
-
+    
 }
